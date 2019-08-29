@@ -3,9 +3,11 @@
 <h1>Fill out the fields and choose the language that you would like to translate your message to</h1>
 
 <form class="" action="/message" method="post">
-  <label for="">Enter your country code, area code,phone number here (example +14158881234)</label>
+  <div>
+  <label for="">Enter your country code, area code, and phone number here (example +14158881234)</label>
   <input type="text" name="phoneNumber" value="">
-  <label for="content">Your message:</label>
+  </div>
+  <div>
   <label>Select language</label>
              <select id = "myList">
                <option value = "az">Azerbaijan</option>
@@ -100,6 +102,10 @@
                <option value = "jv">Javanese</option>
                <option value = "ja">Japanese</option>
              </select>
+  </div>
+  <div>
+  <label for="content">Your message:</label>
   <textarea name="content" cols="50" rows="10"></textarea>
+  </div>
   <input type="submit" name="" value="Send Message">
 </form>
