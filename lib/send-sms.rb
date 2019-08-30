@@ -1,5 +1,5 @@
 require 'twilio-ruby'
-require './public/javascipts/translate.js'
+#require './javascipts/translate.js'
 
 class SendSMS
   def initialize
@@ -17,4 +17,3 @@ class SendSMS
       )
     end
   end
-end
