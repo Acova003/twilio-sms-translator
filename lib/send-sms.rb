@@ -1,14 +1,20 @@
 require 'twilio-ruby'
+require './public/javascipts/translate.js'
 
-account_sid = AUTH_DETAILS['TWILIO_ACCOUNT_SID']
-auth_token = AUTH_DETAILS['TWILIO_AUTH_TOKEN']
-client = Twilio::REST::Client.new(account_sid, auth_token)
+class SendSMS
+  def initialize
+    @client = Twilio::REST::Client.new(
+      ENV['TWILIO_ACCOUNT_SID'],
+      ENV['TWILIO_AUTH_TOKEN']
+    )
+  end
 
-from = AUTH_DETAILS['MY_TWILIO_PHONE_NUMBER'] # Your Twilio number
-to = '' # Your mobile phone number
-
-client.messages.create(
-from: from,
-to: to,
-body: "Hey friend!"
-)
+  def send(to, translated)
+    @client.messages.create(
+      from: ENV['TWILIO_PHONE_NUMBER'],
+        to: to,
+        body: translated
+      )
+    end
+  end
+end

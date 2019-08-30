@@ -1,5 +1,4 @@
 
-
 <h1>Fill out the fields and choose the language that you would like to translate your message to</h1>
 
 <form class="" action="/message" method="post">
@@ -9,7 +8,7 @@
   </div>
   <div>
   <label>Select language</label>
-             <select id = "myList">
+             <select id = "language">
                <option value = "az">Azerbaijan</option>
                <option value = "sq">Albanian</option>
                <option value = "am">Amharic</option>
@@ -107,5 +106,6 @@
   <label for="content">Your message:</label>
   <textarea name="content" cols="50" rows="10"></textarea>
   </div>
-  <input type="submit" name="" value="Send Message">
+  <script src="./javascripts/translate.js"></script>
+  <button onclick="translateText()">Send SMS</button>
 </form>

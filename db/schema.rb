@@ -11,16 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190828203202) do
+ActiveRecord::Schema.define(version: 20190830035543) do
 
-  create_table "broadcasts", force: :cascade do |t|
-    t.string "message"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string  "name"
-    t.integer "phoneNumber"
-    t.string  "language"
+  create_table "messages", force: :cascade do |t|
+    t.string "phoneNumber"
+    t.string "language"
+    t.string "content"
   end
 
 end

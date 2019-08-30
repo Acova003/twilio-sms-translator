@@ -1,5 +1,5 @@
 require './config/environment'
-
+#require js file
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -12,10 +12,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/test" do
-    erb :sendBroadcast
+    erb :create_message
   end
 
   post "/message" do
-  
+    to = params[:phoneNumber]
+    translated = TRANSLATED
+    sms = SendMessage.new
+    sms.send(to,translated)
   end
 end
