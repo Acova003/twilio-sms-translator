@@ -1,9 +1,11 @@
 
 function translateText() {
-  var key = ENV['YANDEX_API_KEY']
+  const language = document.getElementById('language').value;
+  content = document.getElementById('content').value;
+  key = ENV['YANDEX_API_KEY']
   translate = require('yandex-translate')(key);
 
-  TRANSLATED= translate.translate('You can burn my house, steal my car, drink my liquor from an old fruitjar.', { to: 'es' }, function(err, res) {
+  translate.translate('${content}', { to: '${language}' }, function(err, res) {
   console.log(res.text);
 });
 }

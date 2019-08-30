@@ -1,5 +1,5 @@
 require './config/environment'
-#require js file
+
 class ApplicationController < Sinatra::Base
 
   configure do
