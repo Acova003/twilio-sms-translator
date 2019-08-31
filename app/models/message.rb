@@ -1,16 +1,17 @@
-require 'faraday'
-require 'twilio-ruby'
-
 class Message < ActiveRecord::Base
+   require ‘faraday’
+   require ‘twilio-ruby’
+   
   def translate_and_send(phoneNumber, language, content)
     @key = 'trnsl.1.1.20190828T231112Z.8c3e93b59a2085dd.eab1c5d66b33f30d8cfead8081c9b5e2348b3ef3'
     @resp = Faraday.get 'https://translate.yandex.net/api/v1.5/tr.json/translate' do |req|
-      req.params[‘lang’] = params[:language]
-      req.params[‘key’] = @key
-      req.params[‘text’] = params[:content]
-    end
+      req.params['lang'] = en-es
+      req.params['key'] = @key
+      req.params['text'] = hello
+  end
 
     body = JSON.parse(@resp.body)
+    binding.pry
     if @resp.success?
       @translated = body[“response”]
       send

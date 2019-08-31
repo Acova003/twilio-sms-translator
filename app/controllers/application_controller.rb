@@ -11,14 +11,11 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
-  get "/test" do
+  get "/message" do
     erb :create_message
   end
 
   post "/message" do
-    to = params[:phoneNumber]
-    translated = TRANSLATED
-    sms = SendMessage.new
-    sms.send(to,translated)
+    Message.new
   end
 end

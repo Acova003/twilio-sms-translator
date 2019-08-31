@@ -1,6 +1,6 @@
 require 'twilio-ruby'
 
-class SendSMS
+class SendSMS 
   def initialize
     @client = Twilio::REST::Client.new(
       ENV['TWILIO_ACCOUNT_SID'],
