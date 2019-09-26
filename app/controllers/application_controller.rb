@@ -16,7 +16,10 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/message" do
-    my_message = Message.new
-    my_message.translate_and_send(params[:phoneNumber], params[:language], params[:content])
+    # create an instance of a message, supplying the necessary data...
+    my_message = Message.new(params[:phoneNumber], params[:language], params[:content])
+    # and `send!` it! `send!` knows how to translate it and where to send it
+    # because that's stored on the instance and is available to every method.
+    my_message.send!
   end
 end
