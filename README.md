@@ -1,88 +1,41 @@
 # Twilio SMS Translator
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-Create a YAML file to store your credentials and secrets.
-app -> config -> create new file (authentification_details.yaml)
-![](images/)
+The Twilio SMS Translator web application translates your Twilio SMS messages from English to your choice of more than 90 languages. 
 
 ### Prerequisites
 * Twilio account
-* Twilio credit ([free $10 credit when you sign up with this link](www.twilio.com/referral/Io05rI))
+* Twilio credit
+    * [Use this link to get $10 in free Twilio credits](www.twilio.com/referral/Io05rI "Twilio referral")
 * Twilio phone number
 * Yandex Translate API key
-* Personal cell phone number for testing (text messaging rates may apply)
+* Personal cell phone number for application testing (text messaging rates may apply)
     > Verify number
     > * Log into your Twilio account.
     > * Go to phone numbers -> Verified Caller IDs -> click the "+" symbol to add your personal cell phone number.
-    > * Follow steps for verfication. 
+    > * Follow steps for verification.
 
 
-### Installing
+### Getting Started
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+  Create a YAML file to store your credentials and secrets.
+    app -> config -> create new file (authentification_details.yaml)
+    ![Creating your secrets file](public/images/secrets.png)
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+While in your root directory, run 'rackup' to launch server.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* Ruby
+* Sinatra - The web framework used
+* Twilio API
+* Yandex Translator API
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Author
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Amee Covarrubias** - *Student at Hackbright Academy Engineering School for Women*
 
 ## License
 
