@@ -4,7 +4,7 @@ require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
 
 require 'yaml'
-env = YAML.load_file("./config/authentification_details.yml")
+env = YAML.load_file("./config/authentification_details.yaml")[ENV['SINATRA_ENV']]
 env.each do |key, value|
   ENV[key] = value
 end

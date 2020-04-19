@@ -18,5 +18,6 @@ class ApplicationController < Sinatra::Base
   post "/message" do
     my_message = Message.new
     my_message.translate_and_send(params[:phoneNumber], params[:language], params[:content])
+    erb :create_message
   end
 end
