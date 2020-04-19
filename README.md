@@ -6,9 +6,20 @@ One Paragraph of project description goes here
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+Create a YAML file to store your credentials and secrets.
+app -> config -> create new file (authentification_details.yaml)
+![](images/)
+
 ### Prerequisites
 * Twilio account
 * Twilio credit ([free $10 credit when you sign up with this link](www.twilio.com/referral/Io05rI))
+* Twilio phone number
+* Yandex Translate API key
+* Personal cell phone number for testing (text messaging rates may apply)
+    > Verify number
+    > * Log into your Twilio account.
+    > * Go to phone numbers -> Verified Caller IDs -> click the "+" symbol to add your personal cell phone number.
+    > * Follow steps for verfication. 
 
 
 ### Installing
