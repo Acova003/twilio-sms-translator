@@ -1,11 +1,11 @@
 # Twilio SMS Translator
 
-The Twilio SMS Translator web application translates your Twilio SMS messages from English to your choice of more than 90 languages. 
+The Twilio SMS Translator web application translates your Twilio SMS messages from English to your choice of more than 90 languages.
 
 ### Prerequisites
 * Twilio account
 * Twilio credit
-    * [Use this link to get $10 in free Twilio credits](www.twilio.com/referral/Io05rI "Twilio referral")
+    * Sign up for a Twilio account using the following link to receive $10 in free Twilio credits: www.twilio.com/referral/Io05rI
 * Twilio phone number
 * Yandex Translate API key
 * Personal cell phone number for application testing (text messaging rates may apply)
