@@ -2,6 +2,7 @@
 
 The Twilio SMS Translator web application translates your Twilio SMS messages from English to your choice of more than 90 languages.
 
+
 ### Prerequisites
 * Twilio account
 * Twilio credit
@@ -35,7 +36,7 @@ While in your root directory, run 'rackup' to launch server.
 
 ## Author
 
-* **Amee Covarrubias** - *Student at Hackbright Academy Engineering School for Women*
+**Amee Covarrubias** - *Student at Hackbright Academy Engineering School for Women*
 
 ## License
 
